@@ -28,7 +28,7 @@ jobs:
 
     - name: Test Mosquitto container
       run: |
-        docker run -d --name mosquitto-test -p 1883:1883 -p 9001:9001 strinder/mosquitto-custom:latest
+        docker run -d --name mosquitto-test -p 1883:1883 -p 9001:9001 ${{ secrets.DOCKERHUB_USERNAME }}/strinder-mosquitto:latest
         sleep 5
         docker logs mosquitto-test
         docker ps | grep mosquitto-test
@@ -37,4 +37,4 @@ jobs:
 
     - name: Push Docker image
       run: |
-        docker push strinder/mosquitto-custom:latest
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/strinder-mosquitto:latest
