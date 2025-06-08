@@ -1,5 +1,3 @@
-version: '3.8'
-
 # run with: docker compose up -d
 
 services:
