@@ -24,7 +24,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/mosquitto-custom:latest .
+        docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/strinder-mosquitto:latest .
 
     - name: Test Mosquitto container
       run: |
