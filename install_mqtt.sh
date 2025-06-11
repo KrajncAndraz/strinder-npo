@@ -18,7 +18,7 @@ listener 1883
 protocol mqtt
 
 # MQTT over WebSocket
-listener 9001
+listener 9001 0.0.0.0
 protocol websockets
 
 allow_anonymous true
