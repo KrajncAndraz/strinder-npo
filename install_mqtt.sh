@@ -35,7 +35,7 @@ echo "   • MQTT over TCP     : port 1883"
 echo "   • MQTT over WebSocket: port 9001"
 echo "   • Anonymous access  : ENABLED"
 echo ""
-echo "🔧 You can now test using:"
+echo "   You can now test using:"
 echo "   mosquitto_pub -h localhost -t test/topic -m 'hello'"
 echo "   mosquitto_sub -h localhost -t '#'"
 
